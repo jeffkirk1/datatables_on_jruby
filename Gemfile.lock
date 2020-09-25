@@ -63,6 +63,9 @@ GEM
       zeitwerk (~> 2.2, >= 2.2.2)
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
+    ajax-datatables-rails (1.2.0)
+      railties (>= 5.0)
+      zeitwerk
     bindex (0.8.1)
     builder (3.2.4)
     capybara (3.33.0)
@@ -202,6 +205,7 @@ PLATFORMS
 
 DEPENDENCIES
   activerecord-jdbcpostgresql-adapter
+  ajax-datatables-rails
   capybara (>= 2.15)
   faker
   jbuilder (~> 2.7)

@@ -3,7 +3,7 @@
 <div class="container-fluid">
 <h1>Tests</h1>
 
-  <table class="table table-sm table-striped">
+  <table id="tests-datatable" class="table table-sm table-striped" data-source="<%= tests_path(format: :json) %>">
     <thead>
       <tr>
         <th>ID</th>
@@ -17,17 +17,30 @@
     </thead>
 
     <tbody>
-      <% @tests.each do |test| %>
-        <tr>
-          <td><%= test.id %></td>
-          <td><%= test.name %></td>
-          <td><%= test.position %></td>
-          <td><%= test.office %></td>
-          <td><%= test.age %></td>
-          <td><%= test.start_date %></td>
-          <td><%= test.salary %></td>
-        </tr>
-      <% end %>
     </tbody>
   </table>
 </div>
+
+<script type="text/javascript">
+  jQuery(document).ready(function() {
+  $('#tests-datatable').dataTable({
+    "processing": true,
+    "serverSide": true,
+    "ajax": {
+      "url": $('#tests-datatable').data('source')
+    },
+    "pagingType": "full_numbers",
+    "columns": [
+      {"data": "id"},
+      {"data": "name"},
+      {"data": "position"},
+      {"data": "office"},
+      {"data": "start_date"},
+      {"data": "salary"}
+    ]
+    // pagingType is optional, if you want full pagination controls.
+    // Check dataTables documentation to learn more about
+    // available options.
+  });
+});
+</script>

@@ -5,6 +5,10 @@ class TestsController < ApplicationController
   # GET /tests.json
   def index
     @tests = Test.all
+    respond_to do |format|
+      format.html
+      format.json { render json: TestDatatable.new(params) }
+    end
   end
 
   # GET /tests/1

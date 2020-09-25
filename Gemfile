@@ -54,3 +54,7 @@ gem 'ruby-progressbar'
 
 # Faker gem to generate fake data for test records
 gem 'faker'
+
+# Install Rails DataTables adapter (depends on DataTables being installed already in webpacker)
+
+gem "ajax-datatables-rails"
