@@ -48,3 +48,9 @@ gem 'activerecord-jdbcpostgresql-adapter', :platform => :jruby
 
 # Simple Form
 gem 'simple_form'
+
+# Progress bar for rake tasks
+gem 'ruby-progressbar'
+
+# Faker gem to generate fake data for test records
+gem 'faker'

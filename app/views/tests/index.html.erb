@@ -3,9 +3,10 @@
 <div class="container-fluid">
 <h1>Tests</h1>
 
-  <table>
+  <table class="table table-sm table-striped">
     <thead>
       <tr>
+        <th>ID</th>
         <th>Name</th>
         <th>Position</th>
         <th>Office</th>
@@ -18,6 +19,7 @@
     <tbody>
       <% @tests.each do |test| %>
         <tr>
+          <td><%= test.id %></td>
           <td><%= test.name %></td>
           <td><%= test.position %></td>
           <td><%= test.office %></td>
