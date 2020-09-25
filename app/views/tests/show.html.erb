@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @test.name %>
+</p>
+
+<p>
+  <strong>Position:</strong>
+  <%= @test.position %>
+</p>
+
+<p>
+  <strong>Office:</strong>
+  <%= @test.office %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @test.age %>
+</p>
+
+<p>
+  <strong>Start date:</strong>
+  <%= @test.start_date %>
+</p>
+
+<p>
+  <strong>Salary:</strong>
+  <%= @test.salary %>
+</p>
+
+<%= link_to 'Edit', edit_test_path(@test) %> |
+<%= link_to 'Back', tests_path %>
