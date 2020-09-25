@@ -1,0 +1,20 @@
+development:
+  adapter:  postgresql
+  encoding: unicode
+  database: datatables_on_jruby
+  username: dtjru
+  password: dtjrupw
+
+production:
+  adapter:  postgresql
+  encoding: unicode
+  database: datatables_on_jruby
+  username: dtjru
+  password: dtjrupw
+
+test:
+  adapter:  postgresql
+  encoding: unicode
+  database: datatables_on_jruby_test
+  username: dtjru
+  password: dtjrupw
