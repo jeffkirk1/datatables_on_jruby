@@ -57,4 +57,8 @@ gem 'faker'
 
 # Install Rails DataTables adapter (depends on DataTables being installed already in webpacker)
 
-gem "ajax-datatables-rails"
+# gem 'jquery-datatables'
+
+gem "ajax-datatables-rails", git: "https://github.com/jbox-web/ajax-datatables-rails.git"
+
+# gem "ajax-datatables-rails"
